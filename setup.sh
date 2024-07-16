@@ -171,6 +171,7 @@ sleep 1
 fun_bar 'res1'
 clear
 rm /root/subdomainx
+fi
 }
 
 cat <<EOF>> /etc/rmbl/theme/green
@@ -321,9 +322,9 @@ echo -e "${BIBlue}╰═══════════════════�
 #wget https://raw.githubusercontent.com/awanklod/satu/main/install/ins-trgo.sh && chmod +x ins-trgo.sh && ./ins-trgo.sh
 clear
 }
-function limit(){
-
-}
+#function limit(){
+#
+#}
 
 function iinfo(){
 domain=$(cat /etc/xray/domain)
