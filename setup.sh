@@ -172,6 +172,7 @@ fun_bar 'res1'
 clear
 rm /root/subdomainx
 }
+
 cat <<EOF>> /etc/rmbl/theme/green
 BG : \E[40;1;42m
 TEXT : \033[0;32m
