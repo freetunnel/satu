@@ -322,9 +322,27 @@ echo -e "${BIBlue}╰═══════════════════�
 #wget https://raw.githubusercontent.com/awanklod/satu/main/install/ins-trgo.sh && chmod +x ins-trgo.sh && ./ins-trgo.sh
 clear
 }
-#function limit(){
-#
-#}
+function limit(){
+cat > /etc/systemd/system/xraylimit.service <<-END
+[Unit]
+Description=Xray Limit Script Service
+ConditionPathExists=/usr/bin/xraylimit
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/xraylimit
+Restart=always
+RestartSec=3
+TimeoutSec=0
+StandardOutput=tty
+
+[Install]
+WantedBy=multi-user.target
+END
+systemctl daemon-reload
+systemctl enable xraylimit.service
+systemctl start xraylimit.service
+}
 
 function iinfo(){
 domain=$(cat /etc/xray/domain)
