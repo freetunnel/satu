@@ -347,8 +347,8 @@ systemctl start xraylimit.service
 function iinfo(){
 domain=$(cat /etc/xray/domain)
 TIMES="10"
-CHATID="-1001907100770"
-KEY="6461624197:AAEyxiwTsg0AGl9lX1StUejYBxC68c5yDhA"
+CHATID="-1002305290411"
+KEY="8093025196:AAHAykxQ3K5TBPNev8ozawCi5pR9N9CpWsE"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ISP=$(cat /etc/xray/isp)
 CITY=$(cat /etc/xray/city)
@@ -376,7 +376,7 @@ TEXT="
 <code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <i> Notifikasi Installer Script...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/freetunnel1"},{"text":"GRUP","url":"https://t.me/freetunnel"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/freetunnel3"},{"text":"GRUP","url":"https://t.me/ftp_corp"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 }
