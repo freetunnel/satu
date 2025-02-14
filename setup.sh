@@ -383,6 +383,7 @@ clear
 
 CEKIP
 Casper3
+limit
 cat> /root/.profile << END
 if [ "$BASH" ]; then
 if [ -f ~/.bashrc ]; then
