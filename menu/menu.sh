@@ -1,6 +1,6 @@
 #!/bin/bash
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
-MYIP=$(wget -qO- ifconfig.me)
+MYIP=$(cat /etc/myipvps)
 colornow=$(cat /etc/rmbl/theme/color.conf)
 export NC="\e[0m"
 export yl='\033[0;33m';
